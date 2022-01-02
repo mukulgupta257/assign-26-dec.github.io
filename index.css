@@ -42,10 +42,8 @@
 }
 #content-disp{
     width: 80%;
-    background-color: black;
 }
-#content-disp > input{
-    background-color: #808080;
+#top-bar > input{
     font-size: larger;
     outline: none;
     border: none;
@@ -54,23 +52,30 @@
     margin: 1% 2%;
     padding: 0% 2%;
 }
+#top-bar > img{
+    transform: scale(1.2);
+    cursor: pointer;
+}
 #content-grid{
-    display: none;
+    display: grid;
     grid-template-columns: 200px 200px;
     grid-template-rows: 200px 200px 200px;
-    color: #fff;
+    color: #000;
     padding-left: 10%;
 }
 #content-grid > span{
     padding: 5%;
-    box-shadow: 0px 0px 5px #fff;
+    box-shadow: 0px 0px 5px #000;
     margin: 5%;
 }
 #cont-list{
-    display: flex;
+    display: none;
     flex-direction: column;
-    color: #fff;
+    justify-content: center;
+    align-items: center;
 }
 #cont-list > span{
-    
+    font-size: larger;
+    font-weight: 700;
+
 }
